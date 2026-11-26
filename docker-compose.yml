@@ -18,8 +18,8 @@ services:
     ## A prompt exits at once without a terminal, so the container would stop
     ## right after `docker compose up --detach`.
     ## Not needed here: the Dockerfile's sshd CMD keeps the container running.
-    # stdin_open: true  ## docker run -i
-    # tty: true         ## docker run -t
+    stdin_open: true  ## docker run -i
+    tty: true         ## docker run -t
 
     ports:
       ## 2222 on your computer, 22 in the container.
